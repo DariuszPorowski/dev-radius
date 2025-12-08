@@ -32,6 +32,9 @@
       }
     },
     "codespaces": {
+      "openFiles": [
+        "radius.code-workspace"
+      ],
       "repositories": {
         "DariuszPorowski/radius-bicep-types-aws": {
           "permissions": "write-all"
