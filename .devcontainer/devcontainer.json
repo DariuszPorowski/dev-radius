@@ -1,0 +1,81 @@
+{
+  "name": "DEV-RADIUS",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "configureZshAsDefaultShell": false
+    },
+    "ghcr.io/eitsupi/devcontainer-features/jq-likes:2": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/powershell:1": {}
+  },
+  "onCreateCommand": {
+    "rename": "/bin/bash -c \"gh codespace edit --codespace \\\"$CODESPACE_NAME\\\" --display-name \\\"DEV-RADIUS\\\"\""
+  },
+  "postCreateCommand": {
+    "git-safe-dir": "git config --global --add safe.directory /workspaces",
+    "clone": "/bin/bash clone.sh"
+  },
+   "hostRequirements": {
+     "cpus": 8,
+     "memory": "32gb"
+   },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.defaultProfile.osx": "zsh",
+        "powershell.powerShellAdditionalExePaths": {
+          "pwsh": "/usr/bin/pwsh"
+        },
+        "powershell.powerShellDefaultVersion": "pwsh"
+      }
+    },
+    "codespaces": {
+      "repositories": {
+        "DariuszPorowski/radius-bicep-types-aws": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-blog": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-community": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-dashboard": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-design-notes": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-docs": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-lab": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-radius": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-recipes": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-resource-types-contrib": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-roadmap": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-samples": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-terraform-private-modules": {
+          "permissions": "write-all"
+        },
+        "DariuszPorowski/radius-website": {
+          "permissions": "write-all"
+        }
+      }
+    }
+  }
+}
