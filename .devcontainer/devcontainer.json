@@ -14,7 +14,8 @@
   },
   "postCreateCommand": {
     "git-safe-dir": "git config --global --add safe.directory /workspaces",
-    "clone": "/bin/bash clone.sh"
+    "clone": "/bin/bash clone.sh",
+    "setup": "/bin/bash setup.sh"
   },
    "hostRequirements": {
      "cpus": 8,
@@ -33,6 +34,9 @@
     },
     "codespaces": {
       "repositories": {
+        "DariuszPorowski/radius-.github": {
+          "permissions": "write-all"
+        },
         "DariuszPorowski/radius-bicep-types-aws": {
           "permissions": "write-all"
         },
