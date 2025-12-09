@@ -34,7 +34,7 @@
     },
     "codespaces": {
       "repositories": {
-        "DariuszPorowski/radius-.github": {
+        "DariuszPorowski/radius-github": {
           "permissions": "write-all"
         },
         "DariuszPorowski/radius-bicep-types-aws": {
