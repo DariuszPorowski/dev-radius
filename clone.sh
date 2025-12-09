@@ -19,7 +19,14 @@ clone-repo() {
   local repo="${1}"
 
   target_dir="${repo#*/}"
+
+  # if target_dir starts with radius-, remove the prefix
   target_dir="${target_dir#radius-}"
+
+  # if target_dir starts with dot-, remove the dot
+  if [[ "${target_dir}" == .-* ]]; then
+    target_dir="${target_dir:1}"
+  fi
 
   cd "${workspaces_folder}" || return
 

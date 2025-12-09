@@ -7,3 +7,4 @@ workspaces_folder="$(cd "${script_folder}/.." && pwd)"
 
 cp -r "${script_folder}/.vscode" "${workspaces_folder}/"
 cp "${script_folder}/.editorconfig" "${workspaces_folder}"
+cp "${script_folder}/.gitattributes" "${workspaces_folder}"
