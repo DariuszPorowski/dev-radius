@@ -35,49 +35,49 @@
     },
     "codespaces": {
       "repositories": {
-        "DariuszPorowski/radius-github": {
+        "DariuszPorowski/.github": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-bicep-types-aws": {
+        "radius-project/bicep-types-aws": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-blog": {
+        "radius-project/blog": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-community": {
+        "radius-project/community": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-dashboard": {
+        "radius-project/dashboard": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-design-notes": {
+        "radius-project/design-notes": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-docs": {
+        "radius-project/docs": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-lab": {
+        "radius-project/lab": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-radius": {
+        "radius-project/radius": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-recipes": {
+        "radius-project/recipes": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-resource-types-contrib": {
+        "radius-project/resource-types-contrib": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-roadmap": {
+        "radius-project/roadmap": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-samples": {
+        "radius-project/samples": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-terraform-private-modules": {
+        "radius-project/terraform-private-modules": {
           "permissions": "write-all"
         },
-        "DariuszPorowski/radius-website": {
+        "radius-project/website": {
           "permissions": "write-all"
         }
       }
